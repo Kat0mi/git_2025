@@ -11,7 +11,7 @@ uds = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025_overfl
 cdfs = cdfs[
     (cdfs['use'] == 1) &
     (cdfs['SNR_36'] >= 3) & (cdfs['SNR_45'] >= 3) & (cdfs['SNR_58'] >= 3) & (cdfs['SNR_80'] >= 3) & 
-    #(cdfs['SNR_24'] >= 3) & (cdfs['SNR_Ks'] >= 3) &
+    (cdfs['SNR_24'] >= 3) & (cdfs['SNR_Ks'] >= 3) &
     (cdfs['f_IRAC_36'] >= (cdfs['f_IRAC_36'].mean() - (3 * cdfs['f_IRAC_36'].std()))) &
     (cdfs['f_IRAC_36'] <= (cdfs['f_IRAC_36'].mean() + (3 * cdfs['f_IRAC_36'].std()))) &
     (cdfs['f_IRAC_45'] >= (cdfs['f_IRAC_45'].mean() - (3 * cdfs['f_IRAC_45'].std()))) &
@@ -29,7 +29,7 @@ cdfs = cdfs[
 cos = cos[
     (cos['use'] == 1) &
     (cos['SNR_36'] >= 3) & (cos['SNR_45'] >= 3) & (cos['SNR_58'] >= 3) & (cos['SNR_80'] >= 3) &
-    #(cos['SNR_24'] >= 3) & (cos['SNR_Ks'] >= 3) &
+    (cos['SNR_24'] >= 3) & (cos['SNR_Ks'] >= 3) &
     (cos['f_IRAC_36'] >= (cos['f_IRAC_36'].mean() - (3 * cos['f_IRAC_36'].std()))) &
     (cos['f_IRAC_36'] <= (cos['f_IRAC_36'].mean() + (3 * cos['f_IRAC_36'].std()))) &
     (cos['f_IRAC_45'] >= (cos['f_IRAC_45'].mean() - (3 * cos['f_IRAC_45'].std()))) &
@@ -47,7 +47,7 @@ cos = cos[
 uds = uds[
     (uds['use'] == 1) &
     (uds['SNR_36'] >= 3) & (uds['SNR_45'] >= 3) & (uds['SNR_58'] >= 3) & (uds['SNR_80'] >= 3) &
-    #(uds['SNR_24'] >= 3) & (uds['SNR_Ks'] >= 3) &
+    (uds['SNR_24'] >= 3) & (uds['SNR_Ks'] >= 3) &
     (uds['f_IRAC_36'] >= (uds['f_IRAC_36'].mean() - (3 * uds['f_IRAC_36'].std()))) &
     (uds['f_IRAC_36'] <= (uds['f_IRAC_36'].mean() + (3 * uds['f_IRAC_36'].std()))) &
     (uds['f_IRAC_45'] >= (uds['f_IRAC_45'].mean() - (3 * uds['f_IRAC_45'].std()))) &
@@ -62,8 +62,8 @@ uds = uds[
     #(uds['f_Ks'] <= (uds['f_Ks'].mean() + (3 * uds['f_Ks'].std())))
 ]
 
-cdfs.to_csv('/Users/jess/Desktop/git_2025/datasets/ir_cdfs.csv', index = False)
-cos.to_csv('/Users/jess/Desktop/git_2025/datasets/ir_cosmos.csv', index = False)
-uds.to_csv('/Users/jess/Desktop/git_2025/datasets/ir_uds.csv', index = False)
+cdfs.to_csv('/Users/jess/Desktop/git_2025_overflow/datasets/ir_cdfs.csv', index = False)
+cos.to_csv('/Users/jess/Desktop/git_2025_overflow/datasets/ir_cosmos.csv', index = False)
+uds.to_csv('/Users/jess/Desktop/git_2025_overflow/datasets/ir_uds.csv', index = False)
 
 print("IR mask successfully applied! IRAC and MIPS fluxes now within 3-sigma and SNR >= 3")
