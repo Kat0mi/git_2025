@@ -12,7 +12,7 @@ configs = {
         'col': 'log_bayes.agn.luminosity',
         'cmap': 'Spectral',
         'bar': 'log AGN luminosity',
-        'save_path': '/Users/jess/Desktop/git_2025/plot_outputs/{diagnostic}/{diagnostic}_{field}_custom.png',
+        'save_path': '/Users/jess/Desktop/git_2025_overflow/plot_outputs/{diagnostic}/{diagnostic}_{field}_custom.png',
         'title': 'Custom AGN Luminosity'
     },
     
@@ -24,7 +24,7 @@ configs = {
         'col': 'log_bayes.agn.luminosity',
         'cmap': 'Spectral',
         'bar': 'log AGN luminosity',
-        'save_path': '/Users/jess/Desktop/git_2025/plot_outputs/{diagnostic}/{diagnostic}_{field}_bayes_lum.png',
+        'save_path': '/Users/jess/Desktop/git_2025_overflow/plot_outputs/{diagnostic}/{diagnostic}_{field}_bayes_lum.png',
         'title': 'Cigale AGN Luminosity'
     },
 
@@ -34,7 +34,7 @@ configs = {
         'col': 'Cigale_10',
         'cmap': 'Oranges',
         'bar': '1: Cigale frac > 0.10, 0: Cigale frac < 0.10',
-        'save_path': '/Users/jess/Desktop/git_2025/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale10.png',
+        'save_path': '/Users/jess/Desktop/git_2025_overflow/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale10.png',
         'title': 'Cigale AGN Contribution > 10%'
     },
 
@@ -42,7 +42,7 @@ configs = {
         'col': 'Cigale_25',
         'cmap': 'Oranges',
         'bar': '1: Cigale frac > 0.25, 0: Cigale frac < 0.25',
-        'save_path': '/Users/jess/Desktop/git_2025/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale25.png',
+        'save_path': '/Users/jess/Desktop/git_2025_overflow/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale25.png',
         'title': 'Cigale AGN Contribution > 25%'
     },
 
@@ -50,7 +50,7 @@ configs = {
         'col': 'Cigale_50',
         'cmap': 'Oranges',
         'bar': '1: Cigale frac > 0.50, 0: Cigale frac < 0.50',
-        'save_path': '/Users/jess/Desktop/git_2025/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale50.png',
+        'save_path': '/Users/jess/Desktop/git_2025_overflow/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale50.png',
         'title': 'Cigale AGN Contribution > 50%'
     },
 
@@ -58,7 +58,7 @@ configs = {
         'col': 'Cigale_75',
         'cmap': 'Oranges',
         'bar': '1: Cigale frac > 0.75, 0: Cigale frac < 0.75',
-        'save_path': '/Users/jess/Desktop/git_2025/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale75.png',
+        'save_path': '/Users/jess/Desktop/git_2025_overflow/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale75.png',
         'title': 'Cigale AGN Contribution > 75%'
     },
 
@@ -66,7 +66,7 @@ configs = {
         'col': 'Cigale_90',
         'cmap': 'Oranges',
         'bar': '1: Cigale frac > 0.90, 0: Cigale frac < 0.90',
-        'save_path': '/Users/jess/Desktop/git_2025/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale90.png',
+        'save_path': '/Users/jess/Desktop/git_2025_overflow/plot_outputs/{diagnostic}/{diagnostic}_{field}_cigale90.png',
         'title': 'Cigale AGN Contribution > 90%'
     }
 

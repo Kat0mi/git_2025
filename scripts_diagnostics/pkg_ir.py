@@ -39,13 +39,13 @@ import tkinter.simpledialog as simpledialog
 
 # >> Read Data
 
-raw_cdfs = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025', 'datasets', 'raw_cdfs.csv'))
-raw_cosmos = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025', 'datasets', 'raw_cosmos.csv'))
-raw_uds = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025', 'datasets', 'raw_uds.csv'))
+raw_cdfs = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025_overflow', 'datasets', 'raw_cdfs.csv'))
+raw_cosmos = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025_overflow', 'datasets', 'raw_cosmos.csv'))
+raw_uds = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025_overflow', 'datasets', 'raw_uds.csv'))
 
-ir_cdfs = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025', 'datasets', 'ir_cdfs.csv'))
-ir_cosmos = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025', 'datasets', 'ir_cosmos.csv'))
-ir_uds = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025', 'datasets', 'ir_uds.csv'))
+ir_cdfs = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025_overflow', 'datasets', 'ir_cdfs.csv'))
+ir_cosmos = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025_overflow', 'datasets', 'ir_cosmos.csv'))
+ir_uds = pd.read_csv(os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025_overflow', 'datasets', 'ir_uds.csv'))
 
 
 # >> Standard KDE/Scatter Plot Parameters

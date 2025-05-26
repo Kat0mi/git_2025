@@ -4,8 +4,8 @@
 import os; import pandas as pd; import numpy as np; from functools import reduce; import warnings
 warnings.filterwarnings("ignore", category = RuntimeWarning, message = "invalid value encountered in log10")
 
-base_path = os.path.join('/', 'Users', 'jess', 'Desktop', 'purge_data', 'raw')
-save_path = os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025', 'datasets')
+base_path = os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025_data', 'raw')
+save_path = os.path.join('/', 'Users', 'jess', 'Desktop', 'git_2025_overflow', 'datasets')
 
 field_dirs = {'cdfs': os.path.join(base_path, 'cdfs'), 'cosmos': os.path.join(base_path, 'cosmos'), 'uds': os.path.join(base_path, 'uds')}
 extensions = ('.cat', '.fout', '.zout', '.txt')
@@ -24,7 +24,7 @@ def read_and_merge_field_data(field_name, folder_path):
             file_path = os.path.join(folder_path, file)
 
             try:                                                                # Read the file into a DataFrame
-                df = pd.read_csv(file_path, sep='\s+', engine='python')
+                df = pd.read_csv(file_path, sep = '\s+', engine = 'python')
 
                 if 'id' in df.columns:                                          # Check if 'id' exists for merging
                     dfs.append(df)                                              # Append DataFrame to the list if so
