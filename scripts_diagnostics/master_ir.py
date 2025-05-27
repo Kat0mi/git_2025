@@ -1,9 +1,9 @@
 # This script runs all diagnostic scripts for the desired plot presets!
 
 from plot_configs import *
-from lacy import *
-from ki import *
-from kim import *
+from base_lacy import *
+from base_ki import *
+from base_kim import *
 from pkg_ir import *
 
 master_fields = {

@@ -79,9 +79,9 @@ def process_dataframe(data):
             ab_col = col.replace('f_', 'AB_')
             data[ab_col] = -(5 / 2) * safe_log10(data[col]) + 16.4
 
-    # >> Calculate RAI column
+    # >> Calculate RAI
 
-    if 'l_14' in data.columns and 'sfr_uvir' in data.columns:
+    if 'l_14' in data.columns and 'SFR_UVIR' in data.columns:
         data['RAI'] = (3.18e-22 * data['l_14']) / data['SFR_UVIR']
 
     # >> Emission Ratios
@@ -101,9 +101,9 @@ def process_dataframe(data):
         '45_80_in': ['AB_IRAC_45', 'AB_IRAC_80'],
         'Ks_45_in': ['AB_Ks', 'AB_IRAC_45'],
         '80_24_in': ['AB_IRAC_80', 'AB_24_sfr'],
-        'U_V': ['AB_U_rf', 'AB_V_rf'],
-        'V_J': ['AB_V_rf', 'AB_J_rf'],
-        'U_B': ['AB_U_rf', 'AB_B_rf']
+        'U_V': ['f_U_rf', 'f_V_rf'],
+        'V_J': ['f_V_rf', 'f_J_rf'],
+        'U_B': ['f_U_rf', 'f_B_rf']
     }
 
     for new_col, (col1, col2) in subtract_pairs.items():
@@ -175,7 +175,8 @@ def process_dataframe(data):
         'U': ('f_U_rf', 'e_U_rf'),
         'V': ('f_V_rf', 'e_V_rf'),
         'J': ('f_J_rf', 'e_J_rf'),
-        'B': ('f_B_rf', 'e_B_rf')
+        'B': ('f_B_rf', 'e_B_rf'),
+        'f14': ('f_14', 'e_14')
     }
 
     for name, (flux_col, error_col) in snr_pairs.items():
