@@ -7,7 +7,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def plot_lacy(df, field, col, cmap, bar, save_path, title):
+def plot_lacy(df, field, col, cmap, bar, save_path, title, vmin = None, vmax = None):
 
     xd, yd = '58_36', '80_45'
     xlim, ylim = [-1, 1.5], [-1, 1.5]
@@ -18,7 +18,7 @@ def plot_lacy(df, field, col, cmap, bar, save_path, title):
 
     fig, ax = plt.subplots(figsize = (18, 10))
 
-    scatter = ax.scatter(df[xd], df[yd], c = df[col], cmap = cmap, s = 80, zorder = 3)
+    scatter = ax.scatter(df[xd], df[yd], c = df[col], cmap = cmap, s = 80, zorder = 3, vmin = vmin, vmax = vmax)
     cbar = plt.colorbar(scatter)
     cbar.set_label(bar, rotation = 270, labelpad = 20)
 
