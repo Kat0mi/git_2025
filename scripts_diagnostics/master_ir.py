@@ -57,7 +57,7 @@ for diag_name, plot_func in diagnostic.items():
                     #filtered_df = filtered_df[(filtered_df['z'] > 0.2) & (filtered_df['z'] < 1.8)]
                 
                 #elif diag_name == 'kim':
-                    #filtered_df = filtered_df[(filtered_df['z'] > 0.5) & (filtered_df['z'] < 2.5)]
+                    #filtered_df = filtered_df[(filtered_df['z'] > 1.8) & (filtered_df['z'] < 3.2)]
 
                 save_path = config['save_path'].format(field = name, diagnostic = diag_name)
                 save_path = save_path.replace(".png", f"_{z_label}.png")
